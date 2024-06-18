@@ -1,0 +1,6 @@
+[submodule "eightball-service"]
+	path = eightball-service
+	url = https://github.com/sdeeg/eightball-service.git
+[submodule "eightball-ui"]
+	path = eightball-ui
+	url = https://github.com/sdeeg/eightball-ui.git

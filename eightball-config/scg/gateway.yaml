@@ -1,0 +1,34 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGateway
+metadata:
+  name: scg-gateway
+  annotations:
+    apis.tanzu.vmware.com/api-title: 'Eightball APIs'
+    apis.tanzu.vmware.com/api-description: 'APIs for the Eightball App'
+spec:
+  count: 1
+---
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayRouteConfig
+metadata:
+  name: eightball-service-route
+spec:
+  service:
+    name: eightball-service
+    port: 8080
+  routes:
+    - predicates:
+        - Path=/eightball-api/**
+      filters:
+        - StripPrefix=1
+---
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayMapping
+metadata:
+  name: eightball-service-mapping
+spec:
+  gatewayRef:
+    name: scg-gateway
+    namespace: apps
+  routeConfigRef:
+    name: eightball-service-route

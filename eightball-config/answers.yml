@@ -1,0 +1,48 @@
+eightball-answers:
+  defaultset: "classic"
+  answer-sets:
+    classic:
+      - It is certain
+      - It is decidedly so
+      - Without a doubt
+      - Yes - definitely
+      - You may rely on it
+      - As I see it, yes
+      - Most likely
+      - Outlook good
+      - Yes
+      - Signs point to yes
+      - Reply hazy, try again
+      - Ask again later
+      - Better not tell you now
+      - Cannot predict now
+      - Concentrate and ask again
+      - Don't count on it
+      - My reply is no
+      - My sources say no
+      - Outlook not so good
+      - Very doubtful
+    codex:
+      - I don't know.  I'm Sorry.
+      - I'll ask my therapist...
+      - Don't ask me
+      - Life sucks
+      - Why me?
+      - I hate myself
+      - I've got to go
+      - Let me out of here
+      - Can I go now?
+      - Um... Uh... Eh...?
+      - I'll get back to you
+      - Awkward
+      - :(
+      - I hate you
+      - Stop asking me
+      - I have no suggestions
+      - I can't help you
+      - Have you tried medication?
+      - I'm not sure
+      - What do you think?
+      - You're giving me a panic attack
+      - I'm crying!
+      - Please stop shaking me.  I'm gonna puke.
