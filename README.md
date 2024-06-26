@@ -18,10 +18,23 @@ with a separate project to house a github based configuration scenario.
 Control access to the backend API.  External routes for API clients and 
 internal routes for other apps (eg: eightball-ui).
 
+Trying to access the FQDN for a back end service should be blocked
+
 fqdn: https://eightball-service.host_url/answer?answer-set=codex
+
+For app to app communication (East/West or container to container) use K8s networking
 
 local: http://eightball-service:8080/answer?answer-set=codex
 
+SCG provides a front door to expose an API for external clients
+
 scg-fqdn: https://scg-gateway.host_url/eightball-api/answer?answer-set=codex
 
+Inernal clients can also use the name of the SCG object
+
 scg-local: http://scg-gateway/eightball-api/answer?answer-set=codex
+
+## git clone flag
+
+To get all the submodlues with the clone of the main module make sure to pass: 
+--recurse-submodules
